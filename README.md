@@ -3,9 +3,15 @@
 
 ### Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
 
+Un
+<img width="1440" alt="Screenshot 2024-06-06 at 10 04 49 PM" src="https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/9f7b2212-f116-438c-9c4b-37b4421cf5b2">
+
+
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
+
 model Package - Book Class
+
 ![Screenshot 2024-06-06 210723](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/36973db5-a589-4a48-bf50-e533c654be78)
 
 This code defines a repository interface for managing Book entities. By extending JpaRepository, the BookRepo interface inherits several methods for performing CRUD operations, such as saving, deleting, and finding Book entities. The @Repository annotation marks it as a Spring Data repository, which allows Spring to detect it during component scanning and enables exception translation. This setup significantly reduces the amount of boilerplate code needed to interact with the database.
