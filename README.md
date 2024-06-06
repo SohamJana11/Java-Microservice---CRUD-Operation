@@ -50,7 +50,8 @@ ________________________________________________________________________________
 
 ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) The MicroserviceDemoGetApplication class serves as the entry point for the Spring Boot application. The @SpringBootApplication annotation enables auto-configuration, component scanning, and configuration of the application context. The main method calls SpringApplication.run, which initializes and runs the application, setting up the necessary components and starting the embedded server.
 
-#### Main Method
+### Main Method
+
 
 ![Screenshot 2024-06-06 211716](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/d2c73c90-1cea-4e85-9032-aa5ded41beb4)
 
@@ -59,13 +60,14 @@ This configuration file sets up the basic settings for a Spring Boot application
 --------------------------------------------------------------------------------------------------------
 
 
-Naming the application and setting the server port.
+![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) Naming the application and setting the server port.
 Configuring the datasource with JDBC URL, driver, username, and password.
 Enabling SQL logging and specifying the Hibernate dialect for H2.
 Enabling and configuring the H2 console for web access.
 These settings are particularly useful for development and testing environments, providing a quick and easy way to work with an in-memory database and view its contents through the H2 console.
 
-#### application.properties
+### application.properties
+
 
 ![Screenshot 2024-06-06 211334](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/e5312bae-d18d-49fd-8377-1b4336d5e74b)
 
@@ -102,22 +104,35 @@ ________________________________________________________________________________
 
 The Table which we have named Books is empty, so we need to add a few entries
 
-#### AddBook using Post Mapping
+#### Using "/addBook" using Post Mapping for adding new entries
 
 ![Screenshot 2024-06-06 213022](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/2be008a2-6266-402b-b99a-71de89efa0f1)
 
 #### Add a few more entries
-#### Now, see all the entries by using getAllBooks
+#### Now, see all the entries by using "getAllBooks"
+
 ![Screenshot 2024-06-06 213419](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/e9a99feb-183d-49a2-8c8f-2b792ea0b850)
 
-Now get a book by Id
+#### Now get an Entry based on "Id"
+
 ![Screenshot 2024-06-06 213537](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/97e56d94-6583-4d4b-b13e-c7c938d5d507)
 
-Now let's update entry 3 and change the title Chokher Bali to Gora
+#### Now let's update entry 3 and rename the title "Chokher Bali" to "Gora"
+
 ![Screenshot 2024-06-06 213849](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/5bc3e266-2b18-4b21-a919-8a3da507bb18)
 
-And let's delete the last entry numbered 5
+### And let's delete the last entry numbered 5
+
 ![Screenshot 2024-06-06 214020](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/498b4d7b-1d72-41b4-8385-c00dfee68c16)
+
+__________________________________________________________________________________________________
+
+Hurrahhh, finally made it. Here's the scoop:
+
+Model: The data and business logic hero (e.g., Book class).
+View: The fancy presentation layer (think Postman showing off the API responses).
+Controller: The middleman juggling user input, updating the model, and sending info back to the view (our pal, BookController).
+Because who doesn't love organized, maintainable, and scalable code, right?
 
 
 
