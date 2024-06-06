@@ -1,5 +1,7 @@
-# Java-Microservice---CRUD-Operation
-Creating a REST API and performing CRUD operations using an H2 database. The responses have been tested and demonstrated through Postman, adhering to a proper microservice folder structure (model, controller, repository).
+# Java Microservice CRUD Operation using H2 Database
+# header H1 Technologies Used - Spring Boot, Spring Data JPA, H2 Database, Postman, Lombok, Microservice Architecture
+
+Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
 
 This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
 model Package - Book Class
