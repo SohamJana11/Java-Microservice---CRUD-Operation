@@ -1,6 +1,62 @@
 # Java-Microservice---CRUD-Operation
 Creating a REST API and performing CRUD operations using an H2 database. The responses have been tested and demonstrated through Postman, adhering to a proper microservice folder structure (model, controller, repository).
 
+Certainly! Let's break down the code line by line and explain why each part is needed:
+
+Package Declaration
+java
+Copy code
+package cts.pepsico.Microservice_demo_GET.model;
+Purpose: Declares the package in which this class resides. It helps in organizing the code into namespaces, which makes the project structure more manageable and avoids class name conflicts.
+Import Statements
+java
+Copy code
+import jakarta.persistence.*;
+import lombok.*;
+Purpose:
+jakarta.persistence.*: Imports the Java Persistence API (JPA) annotations and classes which are used for object-relational mapping.
+lombok.*: Imports Project Lombok annotations which help reduce boilerplate code by automatically generating getter, setter, toString, and constructor methods.
+Class Definition
+java
+Copy code
+@Entity
+@Table(name = "Books")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+public class Book {
+Annotations:
+@Entity: Marks this class as a JPA entity, meaning it will be mapped to a database table.
+@Table(name = "Books"): Specifies the name of the table in the database that this entity maps to. If not specified, it defaults to the class name.
+@NoArgsConstructor: Generates a no-argument constructor (required by JPA for entity instantiation).
+@AllArgsConstructor: Generates a constructor with parameters for all fields, facilitating easy object creation.
+@Getter: Generates getter methods for all fields.
+@Setter: Generates setter methods for all fields.
+@ToString: Generates a toString method that includes all fields, useful for debugging and logging.
+Fields
+java
+Copy code
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String title;
+    private String author;
+}
+Field Annotations:
+
+@Id: Specifies the primary key of the entity.
+@GeneratedValue(strategy = GenerationType.AUTO): Indicates that the primary key value will be automatically generated, with the specific generation strategy determined by the underlying database.
+Fields:
+
+private Long id;: Represents the unique identifier for the Book entity. The Long type is used to accommodate large values.
+private String title;: Represents the title of the book.
+private String author;: Represents the author of the book.
+Summary
+This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. This setup is typical for a simple microservice dealing with book records.
+
+
 model Package - Book Class
 ![Screenshot 2024-06-06 210723](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/36973db5-a589-4a48-bf50-e533c654be78)
 
