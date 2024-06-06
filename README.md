@@ -14,20 +14,27 @@
 - Controller: Processes user input, updates the model, and returns data to the view (e.g., BookController).
   
 This separation improves organization, maintainability, and scalability.
+---------------------------------------------------------------------------------------------------
 
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
 
-Create Package named "model" -> Create a class named "Book" inside it
+### Create Package named "model" -> Create a class named "Book" inside it
 
 ![Screenshot 2024-06-06 210723](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/36973db5-a589-4a48-bf50-e533c654be78)
 
-This code defines a repository interface for managing Book entities. By extending JpaRepository, the BookRepo interface inherits several methods for performing CRUD operations, such as saving, deleting, and finding Book entities. The @Repository annotation marks it as a Spring Data repository, which allows Spring to detect it during component scanning and enables exception translation. This setup significantly reduces the amount of boilerplate code needed to interact with the database.
-repository Package - BookRepo Class
+
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a repository interface for managing Book entities. By extending JpaRepository, the BookRepo interface inherits several methods for performing CRUD operations, such as saving, deleting, and finding Book entities. The @Repository annotation marks it as a Spring Data repository, which allows Spring to detect it during component scanning and enables exception translation. This setup significantly reduces the amount of boilerplate code needed to interact with the database.
+
+### Create Package named "repository" -> Create a class named "BookRepo" inside it
+
 ![Screenshot 2024-06-06 210538](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/428f0ed5-86f3-404d-b0b3-ddf2594431d0)
 
-This code defines a RESTful controller for managing Book entities in a microservice. It includes methods for retrieving all books, retrieving a book by its ID, adding a new book, updating an existing book, and deleting a book by its ID. Each method maps to an HTTP request and returns an appropriate response with HTTP status codes. The controller uses BookRepo to interact with the database, leveraging Spring's dependency injection and response entity handling to manage the CRUD operations efficiently.
-controller Package - BookController Class
+
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a RESTful controller for managing Book entities in a microservice. It includes methods for retrieving all books, retrieving a book by its ID, adding a new book, updating an existing book, and deleting a book by its ID. Each method maps to an HTTP request and returns an appropriate response with HTTP status codes. The controller uses BookRepo to interact with the database, leveraging Spring's dependency injection and response entity handling to manage the CRUD operations efficiently.
+
+### Create Package named "controller" -> Create a class named "BookController" inside it
+
 ![Screenshot 2024-06-06 210853](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/db05ca28-14b6-45e8-9d48-119b0c30f1ce)
 
 ![Screenshot 2024-06-06 210931](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/e743d454-022a-48ab-af22-93d85d647263)
