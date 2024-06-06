@@ -1,12 +1,15 @@
 # Java-Microservice---CRUD-Operation
 Creating a REST API and performing CRUD operations using an H2 database. The responses have been tested and demonstrated through Postman, adhering to a proper microservice folder structure (model, controller, repository).
 
+This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
 model Package - Book Class
 ![Screenshot 2024-06-06 210723](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/36973db5-a589-4a48-bf50-e533c654be78)
 
+This code defines a repository interface for managing Book entities. By extending JpaRepository, the BookRepo interface inherits several methods for performing CRUD operations, such as saving, deleting, and finding Book entities. The @Repository annotation marks it as a Spring Data repository, which allows Spring to detect it during component scanning and enables exception translation. This setup significantly reduces the amount of boilerplate code needed to interact with the database.
 repository Package - BookRepo Class
 ![Screenshot 2024-06-06 210538](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/428f0ed5-86f3-404d-b0b3-ddf2594431d0)
 
+This code defines a RESTful controller for managing Book entities in a microservice. It includes methods for retrieving all books, retrieving a book by its ID, adding a new book, updating an existing book, and deleting a book by its ID. Each method maps to an HTTP request and returns an appropriate response with HTTP status codes. The controller uses BookRepo to interact with the database, leveraging Spring's dependency injection and response entity handling to manage the CRUD operations efficiently.
 controller Package - BookController Class
 ![Screenshot 2024-06-06 210853](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/db05ca28-14b6-45e8-9d48-119b0c30f1ce)
 
@@ -14,9 +17,18 @@ controller Package - BookController Class
 
 ![Screenshot 2024-06-06 210950](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/177f474d-28e7-4f60-b1fe-7efda257ff13)
 
+
+The MicroserviceDemoGetApplication class serves as the entry point for the Spring Boot application. The @SpringBootApplication annotation enables auto-configuration, component scanning, and configuration of the application context. The main method calls SpringApplication.run, which initializes and runs the application, setting up the necessary components and starting the embedded server.
 main application
 ![Screenshot 2024-06-06 211716](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/d2c73c90-1cea-4e85-9032-aa5ded41beb4)
 
+This configuration file sets up the basic settings for a Spring Boot application using an H2 in-memory database. Key points include:
+
+Naming the application and setting the server port.
+Configuring the datasource with JDBC URL, driver, username, and password.
+Enabling SQL logging and specifying the Hibernate dialect for H2.
+Enabling and configuring the H2 console for web access.
+These settings are particularly useful for development and testing environments, providing a quick and easy way to work with an in-memory database and view its contents through the H2 console.
 application.properties
 ![Screenshot 2024-06-06 211334](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/e5312bae-d18d-49fd-8377-1b4336d5e74b)
 
