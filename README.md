@@ -1,7 +1,7 @@
 # Java Microservice CRUD Operation using H2 Database
 ## Technologies Used - Spring Boot,  Spring Data JPA,  H2 Database,  Postman,  Lombok,  Microservice Architecture
 
-### Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
+##### Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
 
 ### Understanding MVC Architecture
 
