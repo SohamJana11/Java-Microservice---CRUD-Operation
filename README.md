@@ -3,8 +3,18 @@
 
 ### Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
 
-Un
+Understanding MVC 
 <img width="1440" alt="Screenshot 2024-06-06 at 10 04 49 PM" src="https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/9f7b2212-f116-438c-9c4b-37b4421cf5b2">
+
+### Model-View-Controller (MVC) is a design pattern that separates an application into three components:
+
+- Model: Manages data and business logic (e.g., Book class).
+- View: Handles the presentation layer (e.g., Postman for testing API responses).
+- Controller: Processes user input, updates the model, and returns data to the view (e.g., BookController).
+  
+This separation improves organization, maintainability, and scalability.
+
+By separating the application into these components, MVC helps manage complexity, facilitates testing, and improves maintainability.
 
 
 
