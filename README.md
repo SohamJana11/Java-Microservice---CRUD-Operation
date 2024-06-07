@@ -1,5 +1,5 @@
 # Java Microservice CRUD Operation using H2 Database
-## Technologies Used - Spring Boot,  Spring Data JPA,  H2 Database,  Postman,  Lombok,  Microservice Architecture
+## Spring Boot,  Spring Data JPA,  H2 Database,  Postman,  Lombok,  Microservice Architecture
 
 Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
 
@@ -33,7 +33,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________
 
 
-![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a repository interface for managing Book entities. By extending JpaRepository, the BookRepo interface inherits several methods for performing CRUD operations, such as saving, deleting, and finding Book entities. The @Repository annotation marks it as a Spring Data repository, which allows Spring to detect it during component scanning and enables exception translation. This setup significantly reduces the amount of boilerplate code needed to interact with the database.
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) - This code defines a repository interface for managing Book entities. By extending JpaRepository, the BookRepo interface inherits several methods for performing CRUD operations, such as saving, deleting, and finding Book entities. The @Repository annotation marks it as a Spring Data repository, which allows Spring to detect it during component scanning and enables exception translation. This setup significantly reduces the amount of boilerplate code needed to interact with the database.
 
 #### Create Package named "repository" -> Create a class named "BookRepo" inside it
 
@@ -42,7 +42,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________
 
 
-![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a RESTful controller for managing Book entities in a microservice. It includes methods for retrieving all books, retrieving a book by its ID, adding a new book, updating an existing book, and deleting a book by its ID. Each method maps to an HTTP request and returns an appropriate response with HTTP status codes. The controller uses BookRepo to interact with the database, leveraging Spring's dependency injection and response entity handling to manage the CRUD operations efficiently.
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) - This code defines a RESTful controller for managing Book entities in a microservice. It includes methods for retrieving all books, retrieving a book by its ID, adding a new book, updating an existing book, and deleting a book by its ID. Each method maps to an HTTP request and returns an appropriate response with HTTP status codes. The controller uses BookRepo to interact with the database, leveraging Spring's dependency injection and response entity handling to manage the CRUD operations efficiently.
 
 #### Create Package named "controller" -> Create a class named "BookController" inside it
 
@@ -54,10 +54,10 @@ ________________________________________________________________________________
 
 ______________________________________________________________________________________________________
 
-![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) The MicroserviceDemoGetApplication class serves as the entry point for the Spring Boot application. The @SpringBootApplication annotation enables auto-configuration, component scanning, and configuration of the application context. The main method calls SpringApplication.run, which initializes and runs the application, setting up the necessary components and starting the embedded server.
+![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) - The MicroserviceDemoGetApplication class serves as the entry point for the Spring Boot application. The @SpringBootApplication annotation enables auto-configuration, component scanning, and configuration of the application context. The main method calls SpringApplication.run, which initializes and runs the application, setting up the necessary components and starting the embedded server.
 
 ### Main Method
-
+_______________________________________________________________________________________________________
 
 ![Screenshot 2024-06-06 211716](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/d2c73c90-1cea-4e85-9032-aa5ded41beb4)
 
@@ -66,7 +66,7 @@ This configuration file sets up the basic settings for a Spring Boot application
 --------------------------------------------------------------------------------------------------------
 
 
-![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) Naming the application and setting the server port.
+![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) - Naming the application and setting the server port.
 Configuring the datasource with JDBC URL, driver, username, and password.
 Enabling SQL logging and specifying the Hibernate dialect for H2.
 Enabling and configuring the H2 console for web access.
