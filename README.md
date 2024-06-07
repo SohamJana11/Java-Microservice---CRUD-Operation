@@ -17,6 +17,10 @@ This separation improves organization, maintainability, and scalability.
 
 ---------------------------------------------------------------------------------------------------
 
+#### The Dependencies added for creating the Spring project
+
+![Screenshot 2024-06-07 103241](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/ae5e1fa6-016a-432e-8f8f-c2238edc7fd2)
+
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
 
