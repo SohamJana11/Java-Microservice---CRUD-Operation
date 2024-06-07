@@ -4,11 +4,11 @@
 Developed a microservice-based REST API using Spring Boot, performing CRUD operations on a book database. Implemented data persistence with an H2 in-memory database and demonstrated API functionality using Postman. Structured the project following best practices with clear separation of concerns (model, controller, repository). Enabled comprehensive configuration and monitoring through Spring Boot annotations and properties.
 
 #### Understanding MVC Architecture
-
+_______________________________________________________________________________________________________________
 <img width="1440" alt="Screenshot 2024-06-06 at 10 04 49 PM" src="https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/9f7b2212-f116-438c-9c4b-37b4421cf5b2">
 
 #### Model-View-Controller (MVC) is a design pattern that separates an application into three components:
-
+_________________________________________________________________________________________________________________
 - Model: Manages data and business logic (e.g., Book class).
 - View: Handles the presentation layer (e.g., Postman for testing API responses).
 - Controller: Processes user input, updates the model, and returns data to the view (e.g., BookController).
@@ -18,11 +18,13 @@ This separation improves organization, maintainability, and scalability.
 ---------------------------------------------------------------------------------------------------
 
 #### The Dependencies added for creating the Spring project
+__________________________________________________________________________________________________________________
 
 ![Screenshot 2024-06-07 103241](https://github.com/SohamJana11/Java-Microservice---CRUD-Operation/assets/162604344/ae5e1fa6-016a-432e-8f8f-c2238edc7fd2)
 
+------------------------------------------------------------------------------------------------------------------
 
-![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) - This code defines a Book entity class that will be mapped to a "Books" table in a database. The class is annotated with JPA and Lombok annotations to handle database interactions and reduce boilerplate code, respectively. The id field is auto-generated and serves as the primary key, while title and author are standard fields representing attributes of the book. 
 
 #### Create Package named "model" -> Create a class named "Book" inside it
 
